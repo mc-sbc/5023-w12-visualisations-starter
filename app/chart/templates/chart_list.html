@@ -7,15 +7,16 @@
         <a href="{{ url_for('chart.book_ratings_chart') }}">Book ratings</a>
     </li>
     <li>
-        <a href="{{ url_for('chart.user_books_chart') }}">Number of Books Owned by Users</a>
+        <a href="{{ url_for('chart.user_books_chart') }}">Number of books owned by users</a>
     </li>
     <li>
-        <!-- TODO: Add a link for the route to show the books read per year by users -->
-        Books Read per Year by Users
+        <a href="{{ url_for('chart.books_read_chart') }}">Books read per year by users</a>
     </li>
     <li>
-        <!-- TODO: Add a link for the route to show the books per genre chart -->
-        Books per Genre
+        <a href="{{ url_for('chart.books_per_genre_SQL_statement_chart') }}">Books per genre (SQL Statement)</a>
+    </li>
+    <li>
+        <a href="{{ url_for('chart.books_per_genre_SQLAlchemy_chart') }}">Books per genre (SQLAlchemy)</a>
     </li>
 </ul>
 {% endblock %}
